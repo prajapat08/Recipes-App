@@ -17,7 +17,7 @@ app1.set('view engine', 'dust');
 app1.set('views',__dirname+ '/views');
 
 
-app1.use(express.static(path.join(__dirname, 'public')));
+ app1.use(express.static(path.join(__dirname, 'public')));
  
  app1.use(bodyParser.json());
  app1.use(bodyParser.urlencoded({ extended: false}));
